@@ -1,33 +1,72 @@
-body{
-  /* bodyのフォントを変える */
-  font-family: "Arial","Meiryo",sans-serif;
+#top {
+  width: 800px;
+  background-color: #dcc9f4;
+  margin: 20px auto;
   text-align: center;
 }
-root{
-/* フォントサイズを20px */
-  font-size: 20px;
-}
-.blue {
-  /* フォントカラー */
-  color: skyblue;
-}
-.pink {
-  color: rgb(255,192,203);
-}
-h1{
-  /* フォント */
-  font-family: "Josefin Sans", sans-serif;
-    /* 中央寄せ */
+
+.top-child {
+  width: 20%;
+  background-color: #ffd9df;
+  display: inline-block;
   text-align: center;
-  /* フォントサイズ */
-  font-size: 2rem;
-  /* 文字間 */
-  letter-spacing: 1.2em;
-  /* 影 */
-  text-shadow: 2px 2px 3px gray;
-  /* 実線 */
-  border-bottom: 3px solid rgb(115,115,114);
 }
-#basic p{
-  font-weight: bold;
+
+#middle {
+  width: 800px;
+  height: 800px;
+  margin: 20px auto;
+  background-color: #ffd9df;
+  position: relative;
+  padding-top: 20px;
+}
+
+#middle-child01, #middle-child02, #middle-child03 {
+  width: 200px;
+  height: 200px;
+  background-color: #87ceed;
+  position: absolute;
+}
+
+#middle-child01 {
+  top: 100px;
+  left: 100px;
+}
+
+#middle-child02 {
+  top: 300px;
+  left: 300px;
+}
+
+#middle-child03 {
+  top: 500px;
+  left: 500px;
+}
+
+#bottom {
+  width: 800px;
+  height: 300px;
+  margin: 20px auto;
+  background-color: #87ceed;
+}
+
+#bottom-child01,#bottom-child02,#bottom-child03 {
+  width: 400px;
+  height: 100px;
+  background-color: #e5dcf0;
+  position: relative;
+}
+
+#bottom-child01 {
+  left: 0;
+}
+
+#bottom-child02 {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#bottom-child03 {
+  left: 100%;
+  transform: translateX(-100%);
 }
